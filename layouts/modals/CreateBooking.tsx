@@ -61,7 +61,7 @@ const CreateBooking = ({ bookingInfo, onClose }: Props) => {
   const handlePay = () => {
     mutatePayment({
       paymentData: {
-        bookingId: bookingDetails.id,
+        bookingId: bookingDetails.reference_id,
         amount: bookingDetails.total_amt,
         userId: bookingDetails.user.id,
         status: "PENDING",
